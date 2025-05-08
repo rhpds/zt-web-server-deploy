@@ -1,0 +1,53 @@
+You installed the web server software in the previous step, however it
+is not yet running on the machine. You can verify this by checking the
+web service’s status:
+
+[source,bash,run]
+----
+systemctl status httpd --no-pager
+----
+
+Of particular note in the above command output is the status of
+`+incactive (dead)+`. Additionally, the service shows as `+disabled+`,
+which means the service is not automatically started at boot.
+
+Start the service and configure it to automatically start when the
+system is booted.
+
+[source,bash,run]
+----
+systemctl enable --now httpd
+----
+
+By re-running the status command, you can now see that the service is
+both `+running+` and `+enabled+`.
+
+[source,bash,run]
+----
+systemctl status httpd --no-pager
+----
+
+The Apache web server runs as a pool of worker processes. It can service
+multiple, simultaneous requests for web pages by managing them through a
+collection of web server processes. Now that the service is running you
+can inspect the pool by querying your Linux system’s processes and only
+showing those that contain the name `+httpd+`.
+
+[source,bash,run]
+----
+ps aux | grep [h]ttpd
+----
+
+In the above output, you can see there are several httpd processes on
+your system. One of them is owned by root, which is the administrative
+user on the system and handles traffic flow into the web server. The
+rest are owned by the apache user, these are the worker processes. In
+this `+ps+` command output you also see additional information like the
+unique process ID number of each process, the amount of CPU and Memory
+consumed by each process, it’s current status, and other system and
+diagnostic information about each of these instances of the `+httpd+`
+program.
+
+Lastly, you should now be able to select the Website tab at the top of
+the interface and see the Test Page being served by your system’s
+running web server.

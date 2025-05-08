@@ -1,0 +1,21 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-install-httpd"
+      label: "Install Httpd"
+      solveButton: true
+    - name: "02-position"
+      label: "Position"
+      solveButton: true
+    - name: "03-run"
+      label: "Run"
+      solveButton: true
+    - name: "04-build"
+      label: "Build"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty

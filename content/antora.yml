@@ -1,0 +1,9 @@
+---
+name: modules
+version: master
+
+asciidoc:
+  attributes:
+    lab_name: "Deploy web server & apps"
+    release-version: master
+    page-pagination: true

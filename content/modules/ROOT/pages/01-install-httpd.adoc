@@ -1,0 +1,18 @@
+Software in Red Hat Enterprise Linux is packaged in a format called RPM.
+These packages contain compiled, binary applications that are ready to
+run after being installed on your system. However, applications can be
+complex and require other applications or libraries in order to run. You
+will use a command called DNF which will analyze RPM package files to
+install not just the requested package, but all it’s required
+dependencies on the system.
+
+Install the Apache Web Server software, httpd (hyper text transfer
+protocal daemon):
+
+[source,bash,run]
+----
+dnf -y install httpd
+----
+
+From the output above, you can see that the the package, httpd was
+installed as were several required pieces of additional software.

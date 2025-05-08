@@ -1,0 +1,15 @@
+Now that you have a functioning web server, you can make it more useful
+by having it serve your own content.
+
+An html formatted file has been placed in the Document Root, the
+directory that holds webserver content. Please update the file to make
+it into a page that is more unique about you.
+
+Click the following button: link:tab-2[button label="`Editor`"] tab.
+
+The editor will automatically save changes.
+
+After editing the file, move to the link:tab-1[button label="`Website`"]
+tab. You should see your updated website content. If it still displays
+the test page, please use the refresh button to get the browser to
+refresh the site content.
