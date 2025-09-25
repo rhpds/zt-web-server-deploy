@@ -20,6 +20,6 @@ tabs:
   - name: ">_ terminal"
     url: /wetty_rhel/ssh/root
   - name: "Web App"
-    url: http://webapp-${guid}.${domain}/webapp
+    url: http://webapp-${guid}.${domain}
     modules:
       - "04-build"
