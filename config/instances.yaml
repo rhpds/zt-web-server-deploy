@@ -11,3 +11,17 @@ virtualmachines:
         value: "bastions"
     networks:
       - default
+    services:
+      - name: webapp
+        ports:
+          - port: 80
+            protocol: TCP
+            targetPort: 80
+            name: webapp
+    routes:
+      - name: webapp
+        host: webapp
+        service: webapp
+        targetPort: 80
+        tls: true
+        tls_termination: Edge
