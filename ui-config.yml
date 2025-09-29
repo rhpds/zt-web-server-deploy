@@ -19,7 +19,7 @@ antora:
 tabs:
   - name: ">_ terminal"
     url: /wetty_rhel/ssh/root
-  - name: "Clumsy bird"
+  - name: "Clumsy Bird"
     url: http://webapp-${guid}.${domain}/clumsy-bird
     modules:
       - "04-build"
