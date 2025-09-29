@@ -9,7 +9,7 @@ dependencies on the system.
 Install the Apache Web Server software, httpd (hyper text transfer
 protocal daemon):
 
-[source,bash,run]
+[source,bash]
 ----
 dnf -y install httpd
 ----
