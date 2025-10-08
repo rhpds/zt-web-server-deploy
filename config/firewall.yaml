@@ -8,11 +8,6 @@ ingress:
   - ports:
       - protocol: TCP
         port: 80
-  - from:
-      - podSelector:
-          matchLabels:
-            kubevirt.io: showroom
-  - ports:
       - protocol: TCP
         port: 9090
   - from:
