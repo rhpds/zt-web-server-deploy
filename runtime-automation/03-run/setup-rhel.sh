@@ -9,6 +9,7 @@ echo "My favorite meme is:" >> /var/www/html/index.html
 echo "<p>" >> /var/www/html/index.html
 echo "<img src='URL-of-your-favorite-meme'>" >>/var/www/html/index.html
 
+# make sure cockpit is installed
 dnf -y install cockpit
 # Enable cockpit functionality in showroom.
 echo "[WebService]" > /etc/cockpit/cockpit.conf
