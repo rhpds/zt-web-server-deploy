@@ -33,7 +33,7 @@ virtualmachines:
         targetPort: 80
         tls: true
         tls_termination: Edge
-      - name:cockpit
+      - name: cockpit
         host: cockpit
         service: cockpit
         targetPort: 9090
