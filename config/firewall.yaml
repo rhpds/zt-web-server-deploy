@@ -12,6 +12,13 @@ ingress:
       - podSelector:
           matchLabels:
             kubevirt.io: showroom
+  - ports:
+      - protocol: TCP
+        port: 9090
+  - from:
+      - podSelector:
+          matchLabels:
+            kubevirt.io: showroom
 # The following lines are suggested based on Instruqt's allow_external_ingress fields:
 # rhel:
 #   - http

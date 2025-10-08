@@ -28,3 +28,7 @@ tabs:
     modules:
       - "03-run"
       - "04-build"
+  - name: "RHEL Web Console"
+    url: https://cockpit-${guid}.${domain}/
+    modules:
+      - "02-position"

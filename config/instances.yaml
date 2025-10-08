@@ -6,6 +6,8 @@ virtualmachines:
     memory: "4G"
     cores: 1
     image_size: "40G"
+    packages:
+      - cockpit
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
@@ -18,10 +20,22 @@ virtualmachines:
             protocol: TCP
             targetPort: 80
             name: webapp
+      - name: cockpit
+        ports:
+          - port: 9090
+            protocol: TCP
+            targetPort: 9090
+            name: webapp
     routes:
       - name: webapp
         host: webapp
         service: webapp
         targetPort: 80
+        tls: true
+        tls_termination: Edge
+      - name:cockpit
+        host: cockpit
+        service: cockpit
+        targetPort: 9090
         tls: true
         tls_termination: Edge
