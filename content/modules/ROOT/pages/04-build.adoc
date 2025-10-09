@@ -1,6 +1,6 @@
 Web servers can also host web-based applications.
 
-Download a javascript based application and position it on your web
+Download a JavaScript based application and position it on your web
 server. In this lab environment, we have downloaded it and placed it in */var/www/html*.
 
 If you are interested, you can look at the content downloaded
@@ -20,7 +20,7 @@ If you were interested in doing this on your own machine, simply clone the
 cd /var/www/html; git clone https://github.com/ellisonleao/clumsy-bird
 ----
 ====
-Javascript is a language that runs on the web client’s computer. By
+JavaScript is a language that runs on the web client’s computer. By
 switching to the Clumsy Bird tab at the top of the lab interface, you
 will see the code you deployed on the web server be executed by your
 system’s web browser and rendered into this small video game.
