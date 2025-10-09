@@ -1,15 +1,12 @@
-Now that you have a functioning web server, you can make it more useful
-by having it serve your own content.
+Now that you have a functioning web server, you can make it more useful by having it serve your own content.
 
-An html formatted file has been placed in the Document Root, the
-directory that holds webserver content. You can update the file to make
-it into a page that is more unique about you.
+An html formatted file has been placed in the Document Root, the directory that holds webserver content. You can update the file to make it into a page that is more unique about you.
 
 To edit the document, you can use Vim or Nano. For help with these text editors, check out the following:
+
 * https://vim.rtorr.com/[Vim Cheat Sheet]
 * https://www.nano-editor.org/dist/latest/cheatsheet.html[Nano Cheat Sheet]
+
 TIP: Make sure to save your work in the text editor and then reload the page to see your changes.
 
-After editing the file, move to the Website tab. You should see your updated website content. If it still displays
-the test page, please use the refresh button to get the browser to
-refresh the site content.
+After editing the file, move to the Website tab. You should see your updated website content. If it still displays the test page, please use the refresh button to get the browser to refresh the site content.
