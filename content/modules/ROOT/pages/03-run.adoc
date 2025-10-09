@@ -9,4 +9,4 @@ To edit the document, you can use Vim or Nano. For help with these text editors,
 
 TIP: Make sure to save your work in the text editor and then reload the page to see your changes.
 
-After editing the file, move to the Website tab. You should see your updated website content. If it still displays the test page, please use the refresh button to get the browser to refresh the site content.
+After editing the file, move to the `+Website+` tab. You should see your updated website content. If it still displays the test page, please use the refresh button to get the browser to refresh the site content.
