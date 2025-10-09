@@ -4,8 +4,8 @@ An html formatted file has been placed in the Document Root, the directory that 
 
 To edit the document, you can use Vim or Nano. For help with these text editors, check out the following:
 
-* https://vim.rtorr.com/[Vim Cheat Sheet]
-* https://www.nano-editor.org/dist/latest/cheatsheet.html[Nano Cheat Sheet]
+* https://vim.rtorr.com/[Vim Cheat Sheet^]
+* https://www.nano-editor.org/dist/latest/cheatsheet.html[Nano Cheat Sheet^]
 
 TIP: Make sure to save your work in the text editor and then reload the page to see your changes.
 
