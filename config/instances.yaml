@@ -18,22 +18,10 @@ virtualmachines:
             protocol: TCP
             targetPort: 80
             name: webapp
-      - name: cockpit
-        ports:
-          - port: 6901
-            protocol: TCP
-            targetPort: 6901
-            name: webapp
     routes:
       - name: webapp
         host: webapp
         service: webapp
         targetPort: 80
-        tls: true
-        tls_termination: Edge
-      - name: cockpit
-        host: cockpit
-        service: cockpit
-        targetPort: 6901
         tls: true
         tls_termination: Edge
