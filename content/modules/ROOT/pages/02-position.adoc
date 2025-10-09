@@ -2,7 +2,7 @@ You installed the web server software in the previous step, however it
 is not yet running on the machine. You can verify this by checking the
 web service’s status:
 
-[source,bash,run]
+[source,bash]
 ----
 systemctl status httpd --no-pager
 ----
@@ -14,7 +14,7 @@ which means the service is not automatically started at boot.
 Start the service and configure it to automatically start when the
 system is booted.
 
-[source,bash,run]
+[source,bash]
 ----
 systemctl enable --now httpd
 ----
@@ -22,7 +22,7 @@ systemctl enable --now httpd
 By re-running the status command, you can now see that the service is
 both `+running+` and `+enabled+`.
 
-[source,bash,run]
+[source,bash]
 ----
 systemctl status httpd --no-pager
 ----
@@ -33,7 +33,7 @@ collection of web server processes. Now that the service is running you
 can inspect the pool by querying your Linux system’s processes and only
 showing those that contain the name `+httpd+`.
 
-[source,bash,run]
+[source,bash]
 ----
 ps aux | grep [h]ttpd
 ----
