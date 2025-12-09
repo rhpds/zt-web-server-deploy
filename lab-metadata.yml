@@ -2,23 +2,24 @@
 # Single Point of Truth for Lab Information
 
 lab:
-  name: "Red Hat Enterprise Linux Networking Basics"
-  shortname: "zt-networking-basics"
-  maintainer: "Wilson Harris (wharris@redhat.com)" 
+  name: "Deploy Web Server & Apps"
+  shortname: "zt-web-server-deploy"
+  maintainer: "Matthew Yee (myee@redhat.com)" 
   
   description:
-    summary: "Learn the fundamentals of networking in Red Hat Enterprise Linux"
-    goal: "Understand networking concepts and configuration in Red Hat Enterprise Linux"
+    summary: "Add an existing application to a Red Hat universal base image container and deploy it."
+    goal: "After completing this scenario, users will be able to install additional software into a container image."
     concepts:
-      - "Networking"
-      - "Firewall"
-      - "Security"
-    use_case: "Configure secure networking for Red Hat Enterprise Linux"
+      - "Downloading a Red Hat Universal Base Image (UBI)"
+      - "Installing 3rd party software into the container image"
+      - "Committing changes to create a new container image"
+      - "Validating a containerized application"
+    use_case: "You have a piece of software that you would like to deploy within a container image rather than installing it natively on the host system.  By using a container image, you can copy the entire environment for the software to several different hosts or run multiple copies of it on the same system."
     time_to_complete: "10"
     
   git_ref:
     production: "main"
-    development: "main"
+    development: "dev"
 
 # DYNAMIC EXTRACTION SOURCES:
 # ===========================
